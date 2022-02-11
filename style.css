@@ -393,8 +393,7 @@ text-align: center;
    margin: auto;
    margin-top: 2rem;
    display: flex;
-   flex-flow: wrap;
- 
+   flex-flow: wrap; 
 }
 .pizza_form{
     width: 588.75px;
@@ -411,4 +410,16 @@ text-align: center;
 }
 .image_content_pizza{
     display: flex;
+}
+
+#pop_up{
+    background-color: #037A00;
+    width: 100%;
+    max-width: 630px;
+    height: 696px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 33%;
+    
 }

@@ -12,5 +12,11 @@ pizzaOne.addEventListener('click', function (event){
     pizzaOne.innerHTML= "oui"
     pizzaOne.style.textAlign = 'center'
     pizzaOne.style.fontSize = '40px'
-    this.getAttribute('id');
+    alert('caca')
 });
+const popUp = document.querySelector('#pop_up')
+
+popUp.addEventListener('click',function(e){
+    popUp.style.backgroundColor = "red"
+    popUp.fadeIn('500')
+})

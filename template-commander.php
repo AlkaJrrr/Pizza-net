@@ -146,6 +146,8 @@ $metas = get_post_meta(get_the_ID());
 
 
 
-
+<div id="pop_up">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsum error itaque eligendi. Minima, nihil. Quae reprehenderit nam ipsa delectus doloremque. Quasi excepturi dolor, tenetur quis iure, voluptatem laboriosam facilis saepe omnis mollitia officiis, quos error aspernatur eius harum natus.</p>
+</div>
 <?php debug($metas)?>
 <?php get_footer(); ?>
