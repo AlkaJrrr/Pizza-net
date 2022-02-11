@@ -29,12 +29,17 @@ h2{
 
 #menu_nav_pizza{
     background-color: #D0B084;
+    padding: 1%;
 }
 .ul_nav_pizza{
 text-align: center;
 }
 
-
+.logo_pizza{
+    position: absolute;
+    top: 7%;
+    left: 15%;
+}
 
 .ul_nav_pizza li a {
     color: white;
@@ -421,5 +426,6 @@ text-align: center;
     position: absolute;
     top: 50%;
     right: 33%;
+    display: none;
     
 }

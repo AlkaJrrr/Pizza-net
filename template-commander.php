@@ -12,7 +12,7 @@ $metas = get_post_meta(get_the_ID());
     <h2 class="titre_commander_pizza">pizzas</h2>
 </div>
 <div id="wrap_pizza_commander">
-    <div class="pizza_form">
+    <div class="pizza_form" data-id="45">
         <div class="pizza_titre_prix">
             <h2><?= $metas['titre_pizza_one'][0] ?></h2>
             <p><?= $metas['prix_pizza_one'][0] ?></p>
@@ -28,7 +28,7 @@ $metas = get_post_meta(get_the_ID());
             <h2><?= $metas['titre_pizza_two'][0] ?></h2>
             <p><?= $metas['prix_pizza_two'][0] ?></p>
         </div>
-        <div class="image_content_pizza">
+        <div class="image_content_pizza"> 
             <p class="pizza_corps"><?= $metas['content_pizza_two'][0] ?></p>
             <p><?=  getImageAttachment(113 ,'imgpiz','test')?></p>
         </div>
@@ -149,5 +149,9 @@ $metas = get_post_meta(get_the_ID());
 <div id="pop_up">
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsum error itaque eligendi. Minima, nihil. Quae reprehenderit nam ipsa delectus doloremque. Quasi excepturi dolor, tenetur quis iure, voluptatem laboriosam facilis saepe omnis mollitia officiis, quos error aspernatur eius harum natus.</p>
 </div>
+<div class="modal-content" id="popup-45">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
 <?php debug($metas)?>
 <?php get_footer(); ?>
