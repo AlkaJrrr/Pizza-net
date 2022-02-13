@@ -1,6 +1,7 @@
 console.log('caca')
 console.log('meow')
 
+const annuler = document.querySelector('.annule_popup')
 const fermeture = document.querySelector('.close')
 const pizzaOne = document.querySelector('.pizza_form')
 const corps = document.querySelector('#body')
@@ -27,8 +28,22 @@ pizzaOne.addEventListener('click', function (event){
 fermeture.onclick = function(e){
     popUp.style.display = "none"
 }
+annuler.onclick = function(e){
+  popUp.style.display = "none"
+}
+  
 window.onclick = function(event) {
     if (event.target == corps) {
       popUp.style.display = "none";
     }
   }
+
+  var counterVal = 0;
+  function ajoutPlus() {
+    updateDisplay(++counterVal);
+}
+function updateDisplay(val) {
+  document.getElementById("compteur").innerHTML = val;
+}
+
+

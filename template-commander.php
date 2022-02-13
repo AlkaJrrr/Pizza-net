@@ -33,7 +33,7 @@ $metas = get_post_meta(get_the_ID());
         </div>
     </div>
 
-    <div class="pizza_form">
+    <div class="pizza_form" data-id="46">
         <div class="pizza_titre_prix">
             <h2><?= $metas['titre_pizza_two'][0] ?></h2>
             <p><?= $metas['prix_pizza_two'][0] ?></p>
@@ -157,29 +157,34 @@ $metas = get_post_meta(get_the_ID());
 
 <!-- The Modal -->
 <div id="pop_up-45" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close"  data-id="45">&times;</span>
-    <div class="image_content_pizza_modal_one">
-<img class=".image_content_pizza_modal_one" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-    </div>
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close"  data-id="45">&times;</span>
+        <div class="image_content_pizza_modal_one">
+            <img class=".image_content_pizza_modal_one" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+        </div>
         <div class="pizza_titre_prix_modal_one">
             <div class="pizza_personne">
-            <h2><?= $metas['titre_pizza_one'][0] ?></h2>
-            <p><?= $metas['nombre_perso_pop_up'][0] ?> </p>
-            <p><?= $metas['prix_pizza_one'][0] ?></p>
+                <h2><?= $metas['titre_pizza_one'][0] ?></h2>
+                <p><?= $metas['nombre_perso_pop_up'][0] ?> </p>
+                <p><?= $metas['prix_pizza_one'][0] ?></p>
             </div>
-        </div>
-        <div>
-         <div class="sup_plus">
-        <p class="supplement"><?= $metas['supplement_pop_up'][0] ?><span class="plus">+</span></p>
-        </div>
-        </div>
-     </div>
+            <p class="pizza_corps_popup"><?= $metas['content_pizza_twelve'][0] ?></p>
 
+        </div>
+
+        <div class="sup_plus">
+            <span class="supplement"><?= $metas['supplement_pop_up'][0] ?></span><span class="plus">+</span>
+        </div>
+        <div class="ajout_p_m">
+            <p class="moins_ajout">-</p> <p class="two_popup" id="compteur">0</p> <p class="plus_ajout" onclick="ajoutPlus()">+</p>
+        </div>
+        <div class="button_ajout">
+            <button class="panier_popup"><a href="">Ajouter au panier  <span>24,50€</span></a></button> <button class="annule_popup"><a href="">Annuler</a></button>
+        </div>
+    </div>
 </div>
 
-</div>
 
 <?php debug($metas)?>
 <?php get_footer(); ?>
